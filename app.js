@@ -1,7 +1,7 @@
 "use strict";
 
 const getProchainDeparts = async () => {
-    const res = await fetch("http://transport.opendata.ch/v1/stationboard?station=Yverdon-les-Bains&limit=10");
+    const res = await fetch("https://transport.opendata.ch/v1/stationboard?station=Yverdon-les-Bains&limit=10");
     const data = await res.json();
     console.log(data);
     data.stationboard.forEach(element => {
