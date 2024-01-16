@@ -6,6 +6,7 @@ const getProchainDeparts = async () => {
     console.log(data);
     data.stationboard.forEach(element => {
         creeArticle(element);
+        console.log(element)
      });
 }
 
